@@ -1,4 +1,26 @@
 {
+	"name": "nextras/orm-brick-date-time",
+	"type": "library",
+	"description": "Nextras Orm's integration for Brick/DateTime",
+	"keywords": [
+		"nextras",
+		"orm",
+		"brick",
+		"date-time",
+		"instant",
+		"local-date"
+	],
+	"homepage": "https://github.com/nextras/orm-brick-date-time",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Nextras Project",
+			"homepage": "https://github.com/nextras/orm-brick-date-time/graphs/contributors"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/nextras/orm-brick-date-time/issues"
+	},
 	"require": {
 		"php": ">8.1",
 		"nextras/orm": "dev-js/orm-configurator-extension",
