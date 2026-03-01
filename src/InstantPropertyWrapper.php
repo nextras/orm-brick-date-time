@@ -26,7 +26,7 @@ class InstantPropertyWrapper extends GenericPropertyWrapper
 		return match (true) {
 			is_string($value) => ZonedDateTime::parse($value)->getInstant(),
 			$value instanceof \DateTimeInterface => match (PHP_VERSION_ID >= 80400) {
-				true => Instant::of($value->getTimestamp(), $value->getMicrosecond() * 1000),
+				true => Instant::of($value->getTimestamp(), ((int) $value->format('F')) * 1000),
 				false => Instant::of($value->getTimestamp()),
 			},
 			default => throw new InvalidArgumentException(),
